@@ -1,6 +1,6 @@
 ---
 title: "Estado del COVID-19 en Costa Rica"
-Author: Lic. Fernando Bermúdez-Kuminev
+author: "Lic. Fernando Bermúdez-Kuminev"
 output: 
   flexdashboard::flex_dashboard:
     orientation: rows
