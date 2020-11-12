@@ -25,7 +25,7 @@ library(leaflet)
 color_positivos <- 'blue'
 color_activos <- 'red'
 color_recuperados <- 'green'
-color_fallecidos <- 'black'
+color_fallecidos <- 'grey'
 
 color_nuevos_positivos <- 'pink'
 
@@ -38,7 +38,7 @@ color_uci <- 'pink'
 icono_positivos <- 'fas fa-plus'
 icono_activos <- 'fas fa-font'
 icono_recuperados <- 'fas fa-grin-beam-sweat'
-icono_fallecidos <- 'fas fa-cross'
+icono_fallecidos <- 'fas fa-user-minus'
 
 icono_nuevos_positivos <- 'fas fa-user-md'
 
@@ -425,7 +425,7 @@ leaflet_cantones_activos <- leaflet(sf_activos_cantones_ultima_fecha) %>%
 leaflet_cantones_activos
 ```
 
-### Gráfico de cantones con mayor cantidad de casos positivos
+### Gráfico de cantones con mayor cantidad de casos activos
 ```{r}
 st_drop_geometry(sf_activos_cantones_ultima_fecha) %>%
 mutate(canton = factor(canton, levels = canton)) %>%
